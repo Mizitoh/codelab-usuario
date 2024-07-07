@@ -10,17 +10,17 @@ async function bootstrap() {
   app.useGlobalPipes(new ValidationPipe());
   app.enableCors();
 
-  setupOpenApi(app); // TODO - change port
+  setupOpenApi(app);
 
-  await app.listen(3000);
+  await app.listen(3001);
 }
 bootstrap();
 
 function setupOpenApi(app: INestApplication): void {
-  const config = new DocumentBuilder().setTitle('CodelabTemplate').build(); // TODO - change title
+  const config = new DocumentBuilder().setTitle('CodelabAPIUsuario').build();
   const document = SwaggerModule.createDocument(app, config);
 
   SwaggerModule.setup('docs', app, document, { useGlobalPrefix: true });
 
-  Logger.log('OpenAPI is running on http://localhost:3000/api/v1/docs'); //TODO - change port
+  Logger.log('OpenAPI is running on http://localhost:3001/api/v1/docs');
 }

@@ -1,8 +1,6 @@
-# CodeLabAPITemplate
+# CodeLabAPIUsuario
 
-Esse é um template para criação de um API do CodeLab. Utilize este template para criar sua API NestJS dentro de um Docker Container.
-
-⚠️ Antes de iniciar o projeto a partir do templante, verifique os TODO's e substitua pelos valores corretos ⚠️
+API de Usuario do CodLab
 
 ## Development Start
 
